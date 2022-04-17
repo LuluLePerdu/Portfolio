@@ -6,8 +6,8 @@ Ludwig-Emmanuel Dufour
 Travail de session web
 Portfolio Personnel
 /*=============== Fonts ============================*/
-
-
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300&family=Saira:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Roboto:wght@300&family=Saira:wght@100&display=swap');
 /*-------------- Style Général ---------------------*/
 
 
@@ -133,7 +133,7 @@ section{
 	width:100%;
 	height:100%;
 	left:0px;
-	top:0px;
+	top:-50px;
 	z-index:1;
 	
 }
@@ -143,12 +143,14 @@ section{
 	height:100%;
 	font-weight:700;
 	font-size:90px;
+	font-family: 'Permanent Marker', cursive;
 	color:#c4c1b7;
 	z-index:2;
 	padding:20%;
 }
 .colonne-titre h3{
 	position:relative;
+	font-family: 'Nothing You Could Do', cursive;
 	font-weight:700;
 	font-size:24px;
 	color:#c4c1b7;
@@ -200,7 +202,6 @@ section{
 	padding:10px;
 	opacity:1;
 	line-height:20px;
-	
 	font-size:20px;
 	text-transform:uppercase;
 	z-index:7;
@@ -288,4 +289,10 @@ li a:hover:not(.active){
 	color: #999;
 	width:100%;
 	text-transform: none;
+}
+.splatter {
+  position: absolute;
+  top: 55%;
+  left: 65%;
+  z-index: 1; 
 }
