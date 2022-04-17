@@ -53,7 +53,6 @@ p{
 	text-align: left;
     font-size: 24px;
     text-transform: uppercase;
-    font-weight: 700;
     float: left;
     width: 100%;
 	padding-bottom:15px;
@@ -141,9 +140,8 @@ section{
 	position:relative;
 	width:100%;
 	height:100%;
-	font-weight:700;
-	font-size:90px;
-	font-family: 'Permanent Marker', cursive;
+	font-size:80px;
+	font-family: 'Nothing You Could Do', cursive;
 	color:#c4c1b7;
 	z-index:2;
 	padding:20%;
@@ -151,11 +149,9 @@ section{
 .colonne-titre h3{
 	position:relative;
 	font-family: 'Nothing You Could Do', cursive;
-	font-weight:700;
 	font-size:24px;
 	color:#c4c1b7;
-	z-index:3;
-	top:-50px;
+	top:-6%;
 }
 
 .colonne-titre h2:before{
@@ -184,7 +180,7 @@ section{
 	border-right:1px solid;
 	border-color:#fff;
 	position:absolute;
-	top:9%;
+	top:10%;
 	width:140px;
 	height:140px;
 	right:100px;
@@ -222,6 +218,7 @@ li a{
 	text-align:center;
 	padding:28px 32px;
 	text-decoration:none;
+	font-family: 'Nothing You Could Do', cursive;
 }
 li a:hover:not(.active){
 	background-color:#3b252a;
