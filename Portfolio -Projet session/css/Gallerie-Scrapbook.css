@@ -1,8 +1,46 @@
+@charset "utf-8";
+
+/*====================================================
+Ludwig-Emmanuel Dufour
+2031990
+Travail de session web
+Portfolio Personnel
+/*=============== Fonts ============================*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300&family=Saira:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
+/*------------------ Général -------------------*/
 *{
 	box-sizing: border-box;
 	margin:0px;
 	padding:0px;
 }
+
+/*------------------ Colonnes -------------------*/
+.colonne-Titre-Sec{
+	position:fixed;
+	width: 40%;
+	height:65%;
+	overflow:hidden;
+	bottom:120px;
+	left:60px;
+	z-index:1;
+}
+.colonne-Titre-Sec h2{
+	position:relative;
+	width:100%;
+	height:100%;
+	font-size:80px;
+	font-family: 'Cinzel', serif;
+	color:black;
+	z-index:2;
+	padding:20%;
+}
+
+/*------------------ Gallerie -------------------*/
 .gallerie {
 	 display: flex;
 	 padding: 2px;
@@ -11,7 +49,7 @@
  .gallerie:hover .gallerie__image {
 	 filter: grayscale(1);
 }
- .gallerie__column {
+ .gallerie__colonne {
 	 display: flex;
 	 flex-direction: column;
 	 width: 25%;
@@ -41,7 +79,7 @@
 	 position: absolute;
 	 bottom: 0;
 	 left: 0;
-	 padding: 25px 15px 15px;
+	 padding: 25px;
 	 width: 100%;
 	 font-family: 'Raleway', sans-serif;
 	 font-size: 16px;

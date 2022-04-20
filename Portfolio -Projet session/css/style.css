@@ -7,9 +7,11 @@ Travail de session web
 Portfolio Personnel
 /*=============== Fonts ============================*/
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@300&family=Saira:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Roboto:wght@300&family=Saira:wght@100&display=swap');
-/*-------------- Style Général ---------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
+/*-------------- Style Général ---------------------*/
 
 html {
 	overflow-x: hidden;
@@ -26,19 +28,36 @@ body {
 	color: #c4c1b7;
 	text-align: center;
 }
+/*------------------ Logo -------------------*/
+.logo-structure {
+	position: absolute;
+	left:80px;
+	top:15px;
+	z-index:4;
+}
+.logo-structure img {
+	height:80px;
+	width:auto;
+}
 
 
 /*------------------ Typographie -------------------*/
 
 p{
-	font-size: 24px;
+	font-size: 20px;
 	color: #c4c1b7;
-	text-align: left;
+	text-align: center;
 	line-height: 50px;
 	
 }
 
 /*---------------- Section Titre -------------------*/
+
+section{
+	float:left;
+	width:100%;
+	padding:100px 0px;
+}
 
 .section-Titre{
 	position:relative;
@@ -87,11 +106,6 @@ p{
 	width:100%;
 }
 
-section{
-	float:left;
-	width:100%;
-	padding:100px 0px;
-}
 .bg{
 	position:fixed;
 	width:45%;
@@ -110,14 +124,11 @@ section{
 .main-header{
 	background: #100C0D;
 	position:fixed;
-	top:0px;
-	left:0px;
 	width:100%;
 	height:100px;
 	z-index:10;
-	padding:0 60px 0 200px;
 }
-/*-------- Colonne ----------*/
+/*-------- Colonnes ----------*/
 
 .colonne-structure{
 	float:right;
@@ -141,7 +152,7 @@ section{
 	width:100%;
 	height:100%;
 	font-size:80px;
-	font-family: 'Nothing You Could Do', cursive;
+	font-family: 'Cinzel', serif;
 	color:#c4c1b7;
 	z-index:2;
 	padding:20%;
@@ -193,9 +204,8 @@ section{
 .nav-support{
 	float:right;
 	position:relative;
-	margin-right:80px;
-	top:2px;
-	padding:10px;
+	margin-right:3%;
+	top:12%;
 	opacity:1;
 	line-height:20px;
 	font-size:20px;
@@ -207,10 +217,11 @@ ul{
 	margin:0px;
 	padding:0px;
 	overflow:hidden;
+	
 }
 li{
 	float:left;
-	border-right:1px solid #bbb
+	border-right: 1px solid #bbb;
 }
 li a{
 	display:block;
@@ -218,7 +229,7 @@ li a{
 	text-align:center;
 	padding:28px 32px;
 	text-decoration:none;
-	font-family: 'Nothing You Could Do', cursive;
+	font-family: 'Grape Nuts', cursive;
 }
 li a:hover:not(.active){
 	background-color:#3b252a;
@@ -286,10 +297,4 @@ li a:hover:not(.active){
 	color: #999;
 	width:100%;
 	text-transform: none;
-}
-.splatter {
-  position: absolute;
-  top: 55%;
-  left: 65%;
-  z-index: 1; 
 }

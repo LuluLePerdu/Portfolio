@@ -1,3 +1,13 @@
+
+.colonne-Fixe-Snoop{
+	position:fixed;
+	width: 40%;
+	height:65%;
+	overflow:hidden;
+	bottom:120px;
+	left:60px;
+	z-index:1;
+}
 .snoopy { 
 position: absolute;
 left: 50%;
