@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------- Navigation --------------*/
+
+.nav-support{
+	float:right;
+	position:relative;
+	margin-right:3%;
+	top:12%;
+	opacity:1;
+	line-height:20px;
+	font-size:20px;
+	text-transform:uppercase;
+}
+
+ul{
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	
+}
+li{
+	float:left;
+	border-right: 1px solid red;
+}
+li a{
+	display:block;
+	color:blue;
+	text-align:center;
+	padding:28px 32px;
+	text-decoration:none;
+	font-family: 'Grape Nuts', cursive;
+}
+li a:hover:not(.active){
+	background-color:#3b252a;
+}
+
+
+
+/*---------------- Responsive --------------*/
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #c4c1b7;
+    padding: 5px;
+	float:left;
+	position:relative;
+}
+
+.navbar-links li:hover {
+    background-color: #fffff;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75px;
+    right: 1px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5px 1px;
+		margin-right:50px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+		background:#292929;
+    }
+}
