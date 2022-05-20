@@ -24,7 +24,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	background: #262220;
+	background: #191a19;
 	color: #c4c1b7;
 	text-align: center;
 }
@@ -122,10 +122,10 @@ section{
 /*----------- Header ---------*/
 
 .main-header{
-	background: #161616;
+	background: #0997ba;
 	position:fixed;
 	width:100%;
-	height:90px;
+	height:60px;
 	z-index:10;
 }
 /*-------- Colonnes ----------*/
