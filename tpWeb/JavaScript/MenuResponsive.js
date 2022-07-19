@@ -1,4 +1,4 @@
-
+//Permet d'actuver le menu hamburger lors du clic sur l'icone associé
 const navigation = document.getElementById("nav");
 const menu = document.getElementById("menu");
 

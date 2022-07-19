@@ -6,18 +6,19 @@
         <title>Portfolio d'un osti d'Perdu</title>
         <!--=============== css  ===============-->	
         <link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" href="../css/Gallerie-Scrapbook.css">
+		<link rel="stylesheet" href="../css/responsive-gallerie.css">
 		<link rel="stylesheet" href="../css/MenuResponsive.css">
 		<script src="../JavaScript/MenuResponsive.js" defer></script>
+		<script src="../JavaScript/gallerie-responive.js" defer></script>
         <!--=============== favicons ===============-->
     </head>
     <body>
 	
-	<!--=============Début Header==========-->
+	<!--=============Début Header et du menu==========-->
 		<header class="main-header">
 <nav>
-  <div>
-    <!--<a href="Index.html" class="logo"><img src="images/Logo.png" alt="logo"></a>-->
+  <div class="logo-structure">
+    <a href="../Index.html" class="logo"><img src="../images/Logo.png" alt="logo"></a>
   </div>
   <div>
     <ul id="nav">
@@ -37,123 +38,130 @@
 </nav>
 			<!-- Fin Barre de navigation -->
 		</header>
+<div class="conteneur">
+  <div class="colonne-gauche">
+    <div class="img-gauche" style="background-image: url(../images/Photographie/Photo.jpg);">
+	</div>
+	<!-- Filtre de la gallerie avec les tags -->
+<div id="filtre-gallerie-main">
+  <button id="filtre-actif-tout" class="filtre-gallerie tag-actif"> Afficher tout</button>
+  <button id="filtre-nature" class="filtre-gallerie"> nature</button>
+  <button id="filtre-sport" class="filtre-gallerie"> Sport</button>
+  <button id="filtre-voyage" class="filtre-gallerie"> voyage</button>
+  <button id="filtre-escalade" class="filtre-gallerie"> escalade</button>
+  <button id="filtre-autres" class="filtre-gallerie"> Autres</button>
+  <input type="text" name="search" placeholder="Recherche gallerie..">
+  </div>
+  
+  </div>
+  
+  <!-- Gallerie de photos avec les filtres-->
+  <div class="gallerie">
+  <div class="dispo-gallerie">
 	
-            <div class="bg" style="background-image: url(../images/Photographie/Photo.jpg);"></div>
-			<div class="colonne-Titre-Sec">
-			
-			<div class="colonne-titre">
-			</div>
-			<div class="colonne-esthetique"></div>	
-		</div>
-		<div class="colonne-structure">
-				<!-- =========== Section gallerie ========-->
+  <figure class="gallerie-focus-hauteur gallerie-focus-largeur">
+  <div
+    class="filtre-actif tag-nature image "
+    style="background-image: url(../images/Photographie/ParcChute.jpg);"
+  ></div>
+  </figure>
+  
+  <figure class="gallerie-focus-hauteur">
+  <div
+    class="image filtre-actif tag-voyage tag-nature"
+    style="background-image: url(../images/Photographie/IMG_5263.jpg)"
+  ></div>
+  </figure>
+  
+  <figure class="gallerie-focus-hauteur">
+  <div
+    class="image filtre-actif tag-voyage tag-autres"
+    style="background-image: url(../images/Photographie/Cath.jpg)"
+  ></div>
+  </figure>
+  
+  <figure class="gallerie-focus-image">
+  <div
+    class="image filtre-actif tag-voyage tag-nature"
+    style="background-image: url(../images/Photographie/123.jpg)"
+  ></div>
+  </figure>
+  
+    <figure class="gallerie-focus-image">
+  <div
+    class="image filtre-actif tag-voyage tag-autres"
+    style="background-image: url(../images/Photographie/Finisterre.jpg)"
+  ></div>
+  </figure>
+  
+  <figure class="gallerie-focus-largeur">
+  <div
+    class="image filtre-actif tag-autres"
+    style="background-image: url(../images/Photographie/Plan-piano.jpg)"
+  ></div>
+  </figure>
+  
+  <figure class="gallerie-focus-hauteur">
+  <div
+    class="image filtre-actif tag-voyage tag-autres"
+    style="background-image: url(../images/Photographie/Street.jpg)"
+  ></div>
+  </figure>
+  
+  <figure class="gallerie-focus-image">
+  <div
+    class="image tag-actif tag-voyage tag-autres"
+    style="background-image: url(../images/Photographie/Cruz-de-ferro.jpg)"
+  ></div>
+  </figure>
+  
+  <figure class="gallerie-focus-image">
+  <div
+    class="image filtre-actif tag-voyage tag-nature tag-sport"
+    style="background-image: url(../images/Photographie/pelerinagePT1.jpg)"
+  ></div>
+  </figure>
+  
+  <figure class="gallerie-focus-hauteur">
+  <div
+    class="image filtre-actif tag-voyage"
+    style="background-image: url(../images/Photographie/plan-ruelle.jpg)"
+  ></div>
+  </figure>
+  
+  <figure class="gallerie-focus-hauteur">
+  <div
+    class="image filtre-actif tag-escalade tag-sport"
+    style="background-image: url(../images/Photographie/UnderShotCompé.jpg)"
+  ></div>
+  </figure>
+  
+  <figure class="gallerie-focus-image">
+  <div
+    class="image filtre-actif tag-escalade tag-sport"
+    style="background-image: url(../images/Escalade/Route-setting.jpg)"
+  ></div>
+  </figure>
+  
+  <figure class="gallerie-focus-largeur gallerie-focus-hauteur">
+  <div
+    class="image filtre-actif tag-nature tag-sport"
+    style="background-image: url(../images/Photographie/RaquetteView.jpg)"
+  ></div>
+  </figure>
+</div>
 
-		<section>
-
-		<div class="gallerie">
-			<div class="gallerie_colonne">
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Photographie/123.jpg" alt="Photo" class="gallerie__image">--
-						<figcaption class="gallerie__caption">Chemin de Compostelle par Ludwig-E.Dufour</figcaption>
-					</figure>
-				</a>
-		
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Photographie/Abbaye.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Abbaye santiago par Ludwig-E.Duofur</figcaption>
-					</figure>
-		
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Photographie/ParcChute.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Parc des chûtes par Ludwig-E.Dufour</figcaption>
-					</figure>
-					
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Photographie/IMG_5263.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Chemin de Compostelle par Ludwig-E.Dufour</figcaption>
-					</figure>
-					
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Photographie/Cath.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Cathédrale de Léon par Ludwig-E.Dufour</figcaption>
-					</figure>
-				
-			</div>
-			
-			<div class="gallerie_colonne">
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Photographie/Plan-piano.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Plan piano par Ludwig-E.Dufour</figcaption>
-					</figure>
-				
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Photographie/Street.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Street de Léon par Ludwig-E.Dufour</figcaption>
-					</figure>
-		
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Photographie/Cruz-de-ferro.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Cruz de Ferro par Ludwig-E.Dufour</figcaption>
-					</figure>
-					
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Photographie/pelerinagePT1.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Chemin de compostelle par Ludwig-E.Dufour</figcaption>
-					</figure>
-					
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Photographie/Finisterre.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Finesterre par Ludwig-E.Dufour</figcaption>
-					</figure>
-			</div>
-			
-			<div class="gallerie_colonne">
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Photographie/plan-ruelle.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Ruelle sur le chemin par Ludwig-E.Dufour</figcaption>
-					</figure>
-				
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Photographie/UnderShotCompé.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Compétition d'escalade par Ludwig-E.Dufour</figcaption>
-					</figure>
-					
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Escalade/Route-setting.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Route-Setting escalade par Ludwig-E.Dufour</figcaption>
-					</figure>
-
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Photographie/RaquetteView.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Randonné ♥ par Ludwig-E.Dufour</figcaption>
-					</figure>
-					
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Photographie/RockClimbingAncrage.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Escalade en lead par Ludwig-E.Dufour</figcaption>
-					</figure>
-					
-					<figure class="gallerie__thumb gallerie__focus">
-						<img src="../images/Escalade/Canyon-Comp.jpg" alt="Photo" class="gallerie__image">
-						<figcaption class="gallerie__caption">Compétition d'escalade par Ludwig-E.Dufour</figcaption>
-					</figure
-			</div>
-			</div>
-			
-		</div>
-						
-        
-        </section>
-
-        <footer>
-            <div class="contenu">
-                <div class="footer-inner">
-                    <a href="#" class="to-top-btn to-top">Top </a>
-                </div>
-            </div>
+<!-- pied de page -->
+   <footer>
+      <div class="contenu">
+         <div class="footer-inner">
+            <a href="#" class="to-top-btn to-top">Top </a>
+         </div>
+      </div>
         </footer>
-		</div>
+</div>
+</div>
 
-	</body>
+</body>
 	
-	</html>
+</html>

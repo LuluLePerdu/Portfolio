@@ -6,17 +6,20 @@
         <title>Portfolio d'un osti d'Perdu</title>
         <!--=============== css  ===============-->	
         <link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" href="../css/Gallerie.css">
+		<link rel="stylesheet" href="../css/responsive-gallerie.css">
 		<link rel="stylesheet" href="../css/MenuResponsive.css">
 		<script src="../JavaScript/MenuResponsive.js" defer></script>
+		<script src="../JavaScript/gallerie-responive.js" defer></script>
+		<script src="../JavaScript/imageload.js" defer></script>
         <!--=============== favicons ===============-->
     </head>
     <body>
-				<!--=============Début Header==========-->
+	
+	<!--=============Début Header et de la barre de navigation==========-->
 		<header class="main-header">
 <nav>
-  <div>
-    <!--<a href="Index.html" class="logo"><img src="images/Logo.png" alt="logo"></a>-->
+  <div class="logo-structure">
+    <a href="../Index.html" class="logo"><img src="../images/Logo.png" alt="logo"></a>
   </div>
   <div>
     <ul id="nav">
@@ -34,32 +37,43 @@
     <span></span>
   </div>
 </nav>
-		<!--=============Fin Header==========-->	
+			<!-- Fin Barre de navigation -->
+		</header>
+<!-- Colonne de gauche fixe-->
+<div class="conteneur">
+  <div class="colonne-gauche">
+    <div class="img-gauche" style="background-image: url(../images/Photographie/ParcChute.jpg);"></div>
 	
-		<!-- ===========Début Image fixe gauche ========-->
-		<div class="bg" style="background-image: url(../images/Photographie/ParcChute.jpg);"></div>     	
-		<!-- ===========Fin Image fixe gauche ========-->
-		
-		<!-- ===========Début Structure Contact ========-->
-		<div class="colonne-structure">
-		
-				<!-- =========== Section Contact ========-->
-
-        <section>
-			<div class="contenu">
-				<div class="titre-Section">
-					<h3>Contact Information</h3>
-				</div>
-				<p>Si vous souhaitez parler d'un projet, de mon travail ou de quoi que ce soit d'autre, contactez-moi.</p>
-				<div class="contact-details">
-					<ul>
-						<li><span>Courriel :</span><a href="#">Ludwig-Emmanuel@hotmail.com</a></li>
-						<li><span>Cellulaire :</span><a href="#">579-960-3144</a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		</div>
-	</body>
+<h3>Information de contact</h3>			
+   <p>Si vous souhaitez parler d'un projet, de mon travail ou de quoi que ce soit d'autre, contactez-moi.</p>
+   <br>
+	<p><span>Courriel :</span><a href="#">Ludwig-Emmanuel@hotmail.com</a></p>
+	<p><span>Cellulaire :</span><a href="#">579-960-3144</a></p>
 	
-	</html>
+	</div>
+  
+  <!-- Gallerie pour accompagner la page de contact -->
+  <div class="gallerie">
+  <div class="dispo-gallerie" style="padding:5%;">
+	
+  <figure class="gallerie-focus-largeur gallerie-focus-hauteur">
+  <div
+    class="image"
+    style="background-image: url(../images/Photographie/rockClimbingAncrage.jpg)"
+  ></div>
+  </figure>
+  
+  <figure class="gallerie-focus-hauteur gallerie-focus-largeur">
+  <div
+    class="image"
+    style="background-image: url(../images/Photographie/sec-2015-2020.jpg)"
+  ></div>
+  </figure>
+  
+</div>
+</div>
+</div>
+  </div>
+</body>
+	
+</html>
